@@ -8,8 +8,9 @@
         android:id="@+id/dot_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:elevation="10dp"
-        android:padding="8dp"
+        android:elevation="8dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_white"
         app:shapeAppearance="@style/imageViewRounded"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
