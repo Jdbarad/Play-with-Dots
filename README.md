@@ -35,5 +35,6 @@ https://user-images.githubusercontent.com/93068379/209435464-96d29c5a-553e-4582-
 ## Developed By
 ### [Jaypalsinh Barad](https://jdbarad.github.io/)
 - <a href="mailto:jdbarad1010@gmail.com">Mail</a>
+- <a href="https://www.github.com/Jdbarad">GitHub</a>
 - <a href="https://www.linkedin.com/in/jdbarad">LinkedIn</a>
 - <a href="https://twitter.com/jdbarad1010">Tweeter</a>
