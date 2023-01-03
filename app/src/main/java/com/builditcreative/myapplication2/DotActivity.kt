@@ -2,6 +2,8 @@ package com.builditcreative.myapplication2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.core.view.accessibility.AccessibilityManagerCompat.TouchExplorationStateChangeListener
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.builditcreative.myapplication2.databinding.ActivityDotBinding
@@ -19,7 +21,14 @@ class DotActivity : AppCompatActivity() {
         binding = ActivityDotBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var number = intent.extras?.get("number")
+        var number = 0
+        if (intent.hasExtra("number"))
+            number = intent.extras?.get("number") as Int
+
+        var uri = intent.data
+        if (uri!=null) {
+            number = uri.pathSegments?.get(uri.pathSegments.size-1)?.toInt() ?: 0
+        }
 
         dotAdapter = DotAdapter()
         dotAdapter.setDotData(number as Int)
